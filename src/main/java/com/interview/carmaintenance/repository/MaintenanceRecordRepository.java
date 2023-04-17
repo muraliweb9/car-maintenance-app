@@ -10,4 +10,6 @@ import java.util.Optional;
 public interface MaintenanceRecordRepository extends JpaRepository<MaintenanceRecord, String> {
     Optional<MaintenanceRecord> findById(String id);
 
+    Optional<MaintenanceRecord> findByCarId(String id);
+
 }

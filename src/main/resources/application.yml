@@ -68,3 +68,79 @@ eureka:
     leaseRenewalIntervalInSeconds: 10
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}:${random.value}}
+  # Application data to prime the in memory database - TEST purposes only
+application-data:
+  maintenanceRecords:
+    - id: 1
+      car:
+        id: 1
+        registrationPlate: LL62MVF
+        make: Porsche
+        model: Cayenne
+        type: SUV
+        capacity: 5
+      motDate: 2022-12-16
+      serviceDate: 2024-02-01
+      taxedDate: 2024-02-01
+  locations:
+    - id: 1
+      locationName: Toronto
+    - id: 2
+      locationName: Vancouver
+    - id: 3
+      locationName: Ottawa
+  cars:
+    - id: 1
+      registrationPlate: LL72MVF
+      make: Porsche
+      model: Cayenne
+      type: SUV
+      capacity: 5
+      location:
+        id: 1
+        locationName: Toronto
+    - id: 2
+      registrationPlate: LL15RDF
+      make: Range Rover
+      model: Discovery
+      type: SUV
+      capacity: 7
+      location:
+        id: 1
+        locationName: Toronto
+    - id: 3
+      registrationPlate: LL23UBS
+      make: BMW
+      model: 520D
+      type: Sedan
+      capacity: 5
+      location:
+        id: 2
+        locationName: Vancouver
+    - id: 4
+      registrationPlate: LL45UBS
+      make: Lincoln
+      model: Navigator
+      type: SUV
+      capacity: 7
+      location:
+        id: 2
+        locationName: Vancouver
+    - id: 5
+      registrationPlate: LL45UBS
+      make: Tesla
+      model: Model S
+      type: Sedan
+      capacity: 5
+      location:
+        id: 3
+        locationName: Ottawa
+    - id: 6
+      registrationPlate: LL45UBS
+      make: Tesla
+      model: Model X
+      type: SUV
+      capacity: 7
+      location:
+        id: 3
+        locationName: Ottawa
