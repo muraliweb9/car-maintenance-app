@@ -80,6 +80,17 @@ application-data:
         type: SUV
         capacity: 5
       motDate: 2022-12-16
+      serviceDate: 2023-02-01
+      taxedDate: 2023-02-01
+    - id: 2
+      car:
+        id: 2
+        registrationPlate: LL15RDF
+        make: Range Rover
+        model: Discovery
+        type: SUV
+        capacity: 7
+      motDate: 2023-12-16
       serviceDate: 2024-02-01
       taxedDate: 2024-02-01
   locations:
