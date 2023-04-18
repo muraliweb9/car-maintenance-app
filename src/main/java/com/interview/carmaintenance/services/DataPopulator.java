@@ -38,7 +38,7 @@ public class DataPopulator {
         // Populate all the cars
         applicationData.getCars().stream().forEach((c) -> carRepository.save(c));
 
-        // Populate all the bookings
+        // Populate all the maintenance records
         applicationData.getMaintenanceRecords().stream().forEach((c) -> maintenanceRecordRepository.save(c));
 
     }

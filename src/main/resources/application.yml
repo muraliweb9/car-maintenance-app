@@ -68,7 +68,7 @@ eureka:
     leaseRenewalIntervalInSeconds: 10
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}:${random.value}}
-  # Application data to prime the in memory database - TEST purposes only
+# Application data to prime the in memory database - TEST purposes only
 application-data:
   maintenanceRecords:
     - id: 1
