@@ -54,4 +54,14 @@ public class CarMaintenanceService {
         return optMaintRec.orElse(null);
     }
 
+    @GetMapping("maintenancerecordsTry/{carId}")
+    public MaintenanceRecord maintenancerecordsTryFor(@PathVariable String carId) {
+        log.info("Looking up maintenance record try for carId {}", carId);
+        Optional<MaintenanceRecord> optMaintRec = maintenanceRecordRepository.findByCarId(carId);
+        if (optMaintRec.isPresent()) {
+            log.info("Found maintenance record try for carId {}", carId);
+        }
+        return optMaintRec.orElse(null);
+    }
+
 }
